@@ -1,0 +1,218 @@
+{
+    "Threats":
+    [
+        {
+            "name": "Don't-Panic-0",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Don't-Panic-1",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Don't-Panic-2",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Don't-Panic-3",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Don't-Panic-4",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Don't-Panic-5",
+            "effect_text": "Nothing happens",
+            "activation_list": [],
+            "away_missions": []
+        }
+    ],
+
+    "ExternalThreats":
+    [
+        {
+            "name": "Bomber-0",
+            "effect_text": "-1 hull and send a Crew to the infirmary",
+            "starting_health": 3,
+            "activation_list": [
+                {
+                    "activation_value": 3
+                },
+                {
+                    "activation_value": 4
+                }
+            ],
+            "away_missions": []
+        },
+        {
+            "name": "Assault-Cruiser-0",
+            "effect_text": "-2 hull",
+            "starting_health": 4,
+            "activation_list": [
+                {
+                    "activation_value": 4
+                },
+                {
+                    "activation_value": 5
+                }
+            ],
+            "away_missions": []
+        },
+        {
+            "name": "Meteoroid",
+            "effect_text": "-1 health, when destroyed -5 hull",
+            "starting_health": 4,
+            "activation_list": [
+                {
+                    "activation_value": 1
+                }
+            ],
+            "away_missions": []
+        },
+        {
+            "name": "Mercenary",
+            "effect_text": "If no threats activated this round then -2 hull",
+            "starting_health": 3,
+            "activation_list": [],
+            "away_missions": []
+        },
+        {
+            "name": "Solar-Winds",
+            "effect_text": "-2 hull then discard",
+            "starting_health": 0,
+            "activation_list": [
+                {
+                    "activation_value": 2
+                }
+            ],
+            "away_missions": []
+        },
+        {
+            "name": "Boarding-Ship",
+            "effect_text": "-2 hull, send a Tactical Crew to infirmary to discard",
+            "starting_health": 4,
+            "activation_list": [
+                {
+                    "activation_value": 3
+                },
+                {
+                    "activation_value": 4
+                }
+            ],
+            "away_missions": [
+                {
+                    "crew_die": "T",
+                    "optional": "False"
+                }
+            ]
+        },
+        {
+            "name": "Hijackers",
+            "effect_text": "-2 hull",
+            "starting_health": 4,
+            "activation_list": [
+                {
+                    "activation_value": 4
+                },
+                {
+                    "activation_value": 5
+                }
+            ],
+            "away_missions": [
+                {
+                    "crew_die": "C",
+                    "optional": "False"
+                },
+                {
+                    "crew_die": "C",
+                    "optional": "False"
+                }
+            ]
+        }
+    ],
+
+    "InternalThreats":
+    [
+        {
+            "name": "Boost-Morale",
+            "effect_text": "Return a Threat Detected then discard",
+            "activation_list": [
+                {
+                    "activation_value": 6
+                }
+            ],
+            "away_missions": []
+        },
+        {
+            "name": "Cloaked-Threats",
+            "effect_text": "After the Threat Phase, roll the Threat Die again",
+            "activation_list": [
+                {
+                    "activation_value": 2
+                }
+            ],
+            "away_missions": [
+                {
+                    "crew_die": "C",
+                    "optional": "False"
+                },
+                {
+                    "crew_die": "S",
+                    "optional": "False"
+                }
+            ]
+        },
+        {
+            "name": "Pandemic",
+            "effect_text": "Send a Crew to the infirmary",
+            "activation_list": [
+                {
+                    "activation_value": 1
+                }
+            ],
+            "away_missions": [
+                {
+                    "crew_die": "M",
+                    "optional": "True"
+                },
+                {
+                    "crew_die": "S",
+                    "optional": "True"
+                }
+            ]
+        },
+        {
+            "name": "Distracted",
+            "effect_text": "Return this Crew then discard",
+            "activation_list": [
+                {
+                    "activation_value": 3
+                },
+                {
+                    "activation_value": 4
+                }
+            ],
+            "away_missions": [
+                {
+                    "crew_die": "M",
+                    "optional": "False"
+                },
+                {
+                    "crew_die": "M",
+                    "optional": "False"
+                }
+            ]
+        }
+    ]
+}
